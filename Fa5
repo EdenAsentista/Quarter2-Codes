@@ -1,0 +1,23 @@
+destinations = []
+print("Please enter your 5 destinations:")
+
+for i in range(5):
+    place = input(f"Destination {i + 1}: ")
+    destinations.append(place)
+
+
+print("\nOriginal Travel Itinerary:")
+for i, place in enumerate(destinations, start=1):
+    print(f"{i}. {place}")
+
+
+print("\nLet's update your 2nd and 5th destinations.")
+new_second = input("Enter a new destination for position 2: ")
+destinations[1] = new_second
+
+new_fifth = input("Enter a new destination for position 5: ")
+destinations[4] = new_fifth
+
+print("\nUpdated Travel Itinerary:")
+for i, place in enumerate(destinations, start=1):
+    print(f"{i}. {place}")
